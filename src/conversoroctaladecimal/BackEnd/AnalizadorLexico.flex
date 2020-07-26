@@ -1,7 +1,7 @@
-package combersoroctaladecimal.BackEnd;;
+package conversoroctaladecimal.BackEnd;;
 import java_cup.runtime.* ;
 import java_cup.runtime.Symbol;
-import combersoroctaladecimal.BackEnd.sym;
+import conversoroctaladecimal.BackEnd.sym;
 import java.util.ArrayList;
 
 /*--------------2 Declaraciones ------------*/

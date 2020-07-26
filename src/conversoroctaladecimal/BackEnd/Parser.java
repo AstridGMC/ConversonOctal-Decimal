@@ -4,11 +4,11 @@
 // Sun Jul 26 14:34:05 CST 2020
 //----------------------------------------------------
 
-package combersoroctaladecimal.BackEnd;
+package conversoroctaladecimal.BackEnd;
 
 import java.util.LinkedList;
 import java_cup.runtime.*;
-import combersoroctaladecimal.BackEnd.ErrorS;
+import conversoroctaladecimal.BackEnd.ErrorS;
 
 /** CUP v0.11a beta 20060608 generated parser.
   * @version Sun Jul 26 14:34:05 CST 2020

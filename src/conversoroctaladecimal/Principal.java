@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package combersoroctaladecimal;
+package conversoroctaladecimal;
 
-import combersoroctaladecimal.BackEnd.AnalizadorLexico;
-import combersoroctaladecimal.BackEnd.Parser;
+import conversoroctaladecimal.BackEnd.AnalizadorLexico;
+import conversoroctaladecimal.BackEnd.Parser;
 import java.awt.Image;
 import java.io.StringReader;
 import java.util.logging.Level;

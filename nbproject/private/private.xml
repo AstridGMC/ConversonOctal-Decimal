@@ -3,11 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/astridmc/NetBeansProjects/CombersorDecimalAOctal/src/combersordecimalaoctal/CombersorDecimalAOctal.java</file>
-            <file>file:/home/astridmc/NetBeansProjects/CombersorDecimalAOctal/src/combersordecimalaoctal/Principal.java</file>
-            <file>file:/home/astridmc/NetBeansProjects/CombersorDecimalAOctal/src/combersordecimalaoctal/BackEnd/Parser.java</file>
-            <file>file:/home/astridmc/NetBeansProjects/CombersorDecimalAOctal/src/combersordecimalaoctal/BackEnd/AnalizadorLexico.flex</file>
-            <file>file:/home/astridmc/NetBeansProjects/CombersorDecimalAOctal/src/combersordecimalaoctal/BackEnd/Parser.cup</file>
+            <file>file:/home/astridmc/NetBeansProjects/ConversorDecimalAOctal/src/conversoroctaladecimal/BackEnd/Parser.cup</file>
+            <file>file:/home/astridmc/NetBeansProjects/ConversorDecimalAOctal/src/conversoroctaladecimal/BackEnd/AnalizadorLexico.flex</file>
+            <file>file:/home/astridmc/NetBeansProjects/ConversorDecimalAOctal/src/conversoroctaladecimal/BackEnd/AnalizadorLexico.java</file>
         </group>
     </open-files>
 </project-private>

@@ -4,7 +4,7 @@
 // Sun Jul 26 14:34:05 CST 2020
 //----------------------------------------------------
 
-package combersoroctaladecimal.BackEnd;
+package conversoroctaladecimal.BackEnd;
 
 /** CUP generated class containing symbol constants. */
 public class sym {
