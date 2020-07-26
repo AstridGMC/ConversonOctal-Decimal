@@ -1,0 +1,58 @@
+package combersoroctaladecimal.BackEnd;
+import java.util.LinkedList;
+import java_cup.runtime.*;
+import combersoroctaladecimal.BackEnd.ErrorS;
+
+
+parser code 
+
+{:
+    public static int resultado= 0;
+    LinkedList tablaErroresSintacticos =  new LinkedList();
+    public void syntax_error(Symbol s){
+        String lexema = s.value.toString();
+        int fila =  s.right;
+        int columna = s.left;
+        String red="\033[31m"; 
+        System.out.println(red + "ERROR SINTACTICO RECUPERADO!! \t\tLexema: " + lexema+ "\t\tFila " + fila +"\t\tColumna: " +columna+"simbolo"  );
+        ErrorS error = new ErrorS(lexema, fila, columna , "error Sintactico");
+        tablaErroresSintacticos.add(error);
+    }
+
+    public void unrrecovered_syntax_error(Symbol s) throws java.lang.Exception {
+        String lexema = s.value.toString();
+        int fila = s.right;
+        int columna = s.left;
+        String red="\033[31m"; 
+        System.out.println(red + "ERROR SINTACTICO SIN RECUPERACION!! \t\tLexema: " + lexema+ "\t\tFila " + fila +"\t\tColumna: " +columna );
+        ErrorS error = new ErrorS(lexema, fila, columna , "error Sintactico");
+        tablaErroresSintacticos.add(error);
+    }
+:}
+
+
+terminal        DIGITO;
+
+non terminal     S, E;
+
+start with S;
+
+S   ::=     E:res0 {:
+                    Parser.resultado = Integer.parseInt(res0.toString());  
+                    RESULT = res0.toString(); 
+                    System.out.println( "Resultado" + res0.toString());
+                    :}
+;
+
+E   ::=     E:res1 DIGITO: digito {: 
+                    RESULT=  Integer.parseInt(res1.toString()) + (Integer.parseInt(digito.toString())*((int)Math.pow(8, digitoright))); 
+                    :}
+
+            |DIGITO:digito {:
+                    System.out.println(" DigitoN =" +  Integer.parseInt(digito.toString())*((int)Math.pow(8, digitoright))); 
+                    RESULT= (int)Integer.parseInt(digito.toString())*((int)Math.pow(8, digitoright));
+                    :}
+            |error
+;
+
+
